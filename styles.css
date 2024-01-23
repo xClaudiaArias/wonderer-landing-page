@@ -189,6 +189,12 @@ main h2 {
     border-radius: 8px;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .10);
     font-size: 14px;
+    cursor: pointer;
+}
+
+#search #search-form form button:hover {
+    background-color: #006ace;
+    color: white;
 }
 
 #search #search-form p{
@@ -221,4 +227,354 @@ main #search #search-form #search-links li:hover{
     cursor: pointer;
 }
 
+/* FEATURED  */
 
+
+#featured{
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    padding: 0 50px;
+}
+
+#featured h2 {
+    font-size: 22px;
+    padding: 30px 0;
+}
+
+#featured #featured-locations {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#featured #featured-locations .explore-imgs {
+    width: 340px;
+    height: 340px;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+#featured #featured-locations .explore-imgs:nth-child(1) {
+    background: url('./assets/featured1.jpg') no-repeat right;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#featured #featured-locations .explore-imgs:nth-child(2) {
+    background: url('./assets/featured2.jpg') no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#featured #featured-locations .explore-imgs:nth-child(3) {
+    background: url('./assets/featured3.jpg');
+    background-size: contain;
+    background-blend-mode: darken;
+}
+
+#featured #featured-locations .explore-imgs button {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+}
+
+#featured #featured-locations .explore-imgs button:hover {
+    color: black;
+    background: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+/* MOUNTAINS  */
+
+#mountains {
+    /* border: 1px solid; */
+    padding-top: 50px;
+    width: 100%;
+    height: 900px;
+    background: url('./assets/mountains.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+#mountains #quote {
+    margin: 50px;
+    background: black;
+    height: 200px;
+    width: 1340px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mountains #quote blockquote {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#mountains #find-place {
+    padding: 80px 50px 0;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 10px;
+}
+
+#mountains #find-place .find {
+    width: 800px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+    padding: 30px;
+    position: relative;
+}
+
+#mountains #find-place .find:nth-child(1) {
+    background-color: white;
+    color: #0085FF;
+}
+
+#mountains #find-place .find:nth-child(2) {
+    color: white;
+    background-color: #0085FF;
+}
+
+#mountains #find-place .find p{
+    width: 280px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#mountains #find-place .find img{
+    width: 500px;
+    height: 280px;
+    object-fit: contain;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+#mountains #find-place .find:nth-child(1) button{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: white;
+    background-image: url("./assets/arrow-blue96px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    border: 2px solid #0085FF;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+#mountains #find-place .find:nth-child(1) button:hover{
+    background-color: #0085FF;
+    border: 2px solid white;
+    background-image: url("./assets/arrow_white96px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+
+#mountains #find-place .find:nth-child(2) button{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #0085FF;
+    background-image: url("./assets/arrow_white96px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+#mountains #find-place .find:nth-child(2) button:hover{
+    background-color: white;
+    border: 2px solid #0085FF;
+    background-image: url("./assets/arrow-blue96px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+#subscribe {
+    padding: 50px;
+    width: 100%;
+    height: 700px;
+}
+
+#subscribe #subs-img {
+    width: 1340px;
+    height: 700px;
+    background: url('./assets/subscribe.jpg') no-repeat center;
+    background-size: 100%;
+    background-position: right;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#subscribe #subs-img #shader{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 16px;
+}
+
+#subscribe #subs-img #subscribe-info {
+    margin-left: 120px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+#subscribe #subs-img #subscribe-info h2 {
+    font-size: 40px;
+}
+
+#subscribe #subs-img #subscribe-info p {
+    font-size: 22px;
+    font-weight: 200;
+    padding: 0 0 15px;
+}
+
+#subscribe #subs-img #subscribe-info form input[type="text"]{
+    width: 400px;
+    height: 30px;
+    border: none;
+    margin-top: 20px;
+    padding: 0 15px;
+    border-radius: 16px;
+}
+
+
+#subscribe #subs-img #subscribe-info form input[type="text"]::placeholder {
+    font-size: 14px;
+    color: rgb(209, 209, 209);
+}
+
+
+#subscribe #subs-img #subscribe-info form button{
+    margin-left: 20px;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+#subscribe #subs-img #subscribe-info form button:hover {
+    color: black;
+    background: rgb(214, 214, 214);
+}
+
+/* FOOTER  */
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #commitment{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer #commitment p:nth-child(1){
+    font-size: 24px;
+}
+
+footer #commitment p:nth-child(2){
+    font-size: 16px;
+    font-weight: 100;
+}
+
+footer #commitment a{
+    font-size: 16px;
+    color: white;
+}
+
+footer #links {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #links ul {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+footer #links ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+footer #signature {
+    border: 1px solid white;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+footer #signature p:nth-child(1) {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer #signature p:nth-child(2) {
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+footer #signature p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 100;
+}
